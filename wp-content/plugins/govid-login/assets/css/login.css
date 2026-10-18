@@ -1,0 +1,69 @@
+.govid-login {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 0 0 16px;
+}
+
+.govid-login__button,
+.govid-login__button:visited {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px 16px;
+	border-radius: 8px;
+	background: #3c434a;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1.4;
+	text-align: center;
+	text-decoration: none;
+}
+
+.govid-login__button:hover,
+.govid-login__button:focus {
+	color: #fff;
+	filter: brightness(0.88);
+}
+
+.govid-login__button:focus {
+	outline: 2px solid currentColor;
+	outline-offset: 2px;
+}
+
+.govid-login__button--oneid,
+.govid-login__button--oneid:visited {
+	background: #4825c2;
+}
+
+.govid-login__button--myid,
+.govid-login__button--myid:visited {
+	background: #0b6bcb;
+}
+
+.govid-login__toggle-wrap {
+	margin: 0 0 8px;
+	text-align: center;
+}
+
+/* Password form hidden by the "hide_password_form" setting. */
+.govid-only #loginform > p,
+.govid-only #loginform .user-pass-wrap,
+.govid-only #loginform .forgetmenot,
+.govid-only #loginform .submit,
+.govid-only #nav {
+	display: none;
+}
+
+body:not(.govid-only) .govid-login__toggle-wrap {
+	display: none;
+}
+
+/* MyID start form */
+.govid-start-form input[type="date"].input {
+	font-size: 20px;
+	line-height: 1.33;
+	padding: 0.1875rem 0.3125rem;
+	min-height: 40px;
+}
